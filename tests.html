@@ -1,0 +1,25 @@
+<script src="src/grid.js"></script>
+<script>
+
+var g = new Grid(3, 2);
+
+g.set(0, 0, 'a');
+
+console.log('g.get(0,0) should be a: ', g.get(0,0));
+
+g.set(2, 1, 'b');
+
+console.log('g.get(2,1) should be b: ', g.get(2,1));
+
+console.log('g.getRow(0): ', g.getRow(0));
+
+console.log('g.getCol(2): ', g.getCol(2));
+
+g.fillRow(0, 'c');
+
+g.fillCol(1, 'd');
+
+
+g.log();
+
+</script>
